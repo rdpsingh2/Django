@@ -1,0 +1,27 @@
+   # def post(self, request, format=None):
+    #     data = request.data
+    #     try:
+    #         product = Product.objects.create(**data)
+    #     except ValidationError as e :
+    #         return Response({'error': str(e)}, status=400)
+    #     return Response(product.values())
+
+
+    # def put(self, request, format=None, pk=None):
+    #     try:
+    #         product = Product.objects.get(pk=pk)
+    #     except Product.DoesNotExist:
+    #         return Response({'error': 'Product not found'}, status=404)
+    #     data = request.data
+    #     for key, value in data.items():
+    #         setattr(product, key, value)
+    #     product.save()
+    #     return Response(product.values())
+
+    # def delete(self, request, format=None, pk=None):
+    #     try:
+    #         product = Product.objects.get(pk=pk)
+    #     except Product.DoesNotExist:
+    #         return Response({'error': 'Product not found'}, status=404)
+    #     product.delete()
+    #     return Response({'message': 'Product deleted successfully'}, status=204)
